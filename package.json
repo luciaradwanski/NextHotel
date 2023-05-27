@@ -1,0 +1,40 @@
+{
+  "name": "hotel-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "@types/node": "18.15.10",
+    "@types/react": "18.0.30",
+    "@types/react-dom": "18.0.11",
+    "aos": "^2.3.4",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0-alpha2",
+    "bootstrap-icons": "^1.10.3",
+    "embla-carousel-autoplay": "^8.0.0-rc03",
+    "embla-carousel-react": "^8.0.0-rc03",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-player": "^2.12.0",
+    "react-redux": "^8.0.5",
+    "react-slick": "^0.29.0",
+    "react-transition-group": "^4.4.5",
+    "slick-carousel": "^1.8.1",
+    "sweetalert": "^2.1.2",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.10",
+    "standard": "^17.0.0"
+  }
+}

@@ -1,0 +1,230 @@
+/* RecreationEmble*/
+
+.embla {
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+    --slide-height: 19rem;
+    margin-top: 60px;
+    padding: 1.4rem;
+}
+.embla__viewport {
+    overflow: hidden;
+}
+.embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    flex-direction: row;
+    height: auto;
+    margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    position: relative;
+}
+.embla__slide__img {
+    display: block;
+    height: 39.1rem;
+    width: 100%;
+    object-fit: cover;
+}
+.embla__slide__number {
+    width: 4.6rem;
+    height: 4.6rem;
+    z-index: 1;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    border-radius: 50%;
+    background-color: rgba(var(--background-site-rgb-value), 0.85);
+    line-height: 4.6rem;
+    font-weight: 900;
+    text-align: center;
+    pointer-events: none;
+}
+.embla__slide__number > span {
+    color: var(--brand-primary);
+    background-image: linear-gradient(
+        45deg,
+        var(--brand-primary),
+        var(--brand-secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.embla__progress {
+    z-index: 1;
+    background-color: rgb(249, 249, 249);
+    position: absolute;
+    height: 0.3rem;
+    border-radius: 0.2rem;
+    left: 0;
+    right: 0;
+    bottom: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    width: 21rem;
+    max-width: 90%;
+    overflow: hidden;
+}
+.embla__progress__bar {
+    background-image: linear-gradient(
+        45deg,
+        rgb(47, 112, 193),
+        rgb(116, 97, 195)
+    );
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+}
+
+/* Fin de RecreationEmble*/
+
+/* Icono de Show More de Carousel*/
+
+
+.ContainerButtonMoreRecreation{
+    transform: translate3d(-60px, -60px, 0);
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.ButtonMoreRecreation{
+    background-color: transparent;
+    border: none;
+}
+
+.ButtonMoreRecreation a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+.IconArrow {
+    animation: move-right 1s linear infinite;
+    margin-top: -20px
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+/* Fin de Icono de Show More de Carousel*/
+
+
+/* Carousel*/
+.ContainerCarousel{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 4rem
+  }
+  
+  .ContainerCarousel h1{
+    font-size: 1.9rem;
+  }
+  
+  .ContainerCarousel p{
+    width: 28rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 14px;
+  }
+  
+  .parrafoCarousel{
+    text-align: justify;
+  }
+  
+  .embla2 {
+    overflow: hidden;
+  }
+  .embla__container2 {
+    display: flex;
+  }
+  .embla__slide2 {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  
+/**/
+
+
+/* List of Activity*/
+
+.ContainerActivity{
+    background-image: url(https://images.unsplash.com/photo-1665233658197-68150976f697?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 60px;
+}
+
+.CartActivity{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 40px;
+}
+
+.Title{
+    font-family: 'Ms Madi', cursive;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.441);;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.TitleDescriptionAct{
+    width: 500px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.441);
+    padding: 40px;
+    text-align: justify;
+}
+.ActivityTitle{
+    color: black;
+    font-size: 20px;
+}
+.ActivityParrafo{
+    color: black;
+    font-size: 18px;
+}
+
+/* Fin de List of Activity*/

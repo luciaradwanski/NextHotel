@@ -1,0 +1,60 @@
+.header{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 14px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: brown;
+}
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px; /* Ancho del rectángulo desplegable */
+    background-color: #f1f1f1;
+    padding: 1rem;
+    transform-origin: right;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .offcanvas-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .offcanvas-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .offcanvas-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .offcanvas-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 300ms, transform 300ms;
+  }

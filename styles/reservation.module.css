@@ -1,0 +1,360 @@
+/* ReservaCarousel */
+
+.embla {
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+    --slide-height: 19rem;
+    margin-top: 60px;
+    
+}
+.embla__viewport {
+    overflow: hidden;
+}
+.embla__container {
+    backface-visibility: hidden;
+    display: flex;
+    touch-action: pan-y;
+    flex-direction: row;
+    height: auto;
+    margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding-left: var(--slide-spacing);
+    position: relative;
+}
+.embla__slide__img {
+    display: block;
+    height: 39rem;
+    width: 100%;
+    object-fit: cover;
+}
+.embla__slide__number {
+    width: 4.6rem;
+    height: 4.6rem;
+    z-index: 1;
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    border-radius: 50%;
+    background-color: rgba(var(--background-site-rgb-value), 0.85);
+    line-height: 4.6rem;
+    font-weight: 900;
+    text-align: center;
+    pointer-events: none;
+}
+.embla__slide__number > span {
+    color: var(--brand-primary);
+    background-image: linear-gradient(
+        45deg,
+        var(--brand-primary),
+        var(--brand-secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.embla__dot,
+.embla__button {
+    --webkit-appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    display: inline-flex;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.embla__dots {
+    z-index: 1;
+    bottom: 1.2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.embla__dot {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+.embla__dot:after {
+    background: rgb(249, 249, 249);
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+}
+.embla__dotSelected:after {
+    background: linear-gradient(
+        45deg,
+        rgb(188, 47, 193),
+        rgb(195, 97, 190)
+    );
+}
+.embla__button {
+    z-index: 1;
+    color: rgb(249, 249, 249);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+}
+.embla__buttonPrev {
+    left: 1.6rem;
+}
+.embla__buttonNext {
+    right: 1.6rem;
+}
+.embla__button:disabled {
+    opacity: 0.3;
+}
+.embla__button__svg {
+    width: 65%;
+    height: 65%;
+}
+
+/* Fin de ReservaCarousel */
+/* FormTourist*/
+
+.ContainerFormTourist{
+    background-image: url(https://cache.marriott.com/content/dam/marriott-renditions/HNMMC/hnmmc-center-0216-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1215px:*);
+    width: 100%;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+.ContainerFormReservation{
+    background-image: url(https://s7d1.scene7.com/is/image/marriotts7prod/mc-hnmmc-refillable-bottles-39609:Classic-Hor?wid=1215&fit=constrain);
+    
+    width: 100%;
+    padding: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+
+.FormTourist{
+    
+    max-width: 800px;
+    margin: auto;
+}
+.FormReservation{
+    max-width: 800px;
+    margin: auto;
+}
+
+.FormTourist h1{
+    font-family: 'Ms Madi', cursive;
+    font-size: 40px;
+    background-color: white;
+    width: 120px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.FormReservation h1{
+    font-family: 'Ms Madi', cursive;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.355);
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    color: blue;
+}
+
+.FormT{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 2rem;  /* Espaciado inferior */
+}
+.FormR{
+    background-color: rgba(255, 255, 255, 0.271);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 2rem;  /* Espaciado inferior */
+}
+
+.LabelTourist{
+    font-size: 24px;
+    font-family: 'Edu QLD Beginner', cursive; 
+}
+.LabelReservation{
+    font-size: 24px;
+    font-family: 'Ms Madi', cursive;
+    color: blue;
+}
+
+.InputTourist{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+}
+
+.InputReservation{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 220px;
+    height: 30px;
+    padding: 10px;
+}
+
+.InputTouristTotal{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 600px;
+    height: 30px;
+    padding: 10px;
+}
+
+.InputReservationTotal{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 600px;
+    height: 30px;
+    padding: 10px;
+    border-color: blue;
+}
+
+.InputMessage{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.ErrorTourist{
+    color: red;
+    position: absolute;
+    top: -30px; /* Posiciona el párrafo 30px por encima del input */
+  right: 0; /* Alinea el párrafo a la derecha */
+}
+
+.ContainerTwo{
+    display: grid;
+    grid-template-columns: 1fr; /* Configuración para pantallas pequeñas */
+    gap: 4rem; /* Espaciado entre los elementos del grid */
+    width: 100%; /* Ancho completo */
+    padding-bottom: 2rem;  /* Espaciado inferior */
+}
+
+@media (min-width: 768px) { /* Media query para pantallas de tamaño medio y superior */
+    .ContainerTwo {
+      grid-template-columns: repeat(2, 1fr); /* Configuración para pantallas medianas y superiores */
+    }
+    .ContainerMessage{
+        grid-template-columns: repeat(2, 1fr); /* Configuración para pantallas medianas y superiores */
+    }
+}
+
+.ContainerThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.ContainerReservationThree{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: center;
+    position: relative;
+}
+
+.ContainerMessage{
+    display: grid;
+    grid-template-columns: 1fr; /* Configuración para pantallas pequeñas */
+    gap: 1rem; /* Espaciado entre los elementos del grid */
+    width: 100%; /* Ancho completo */
+    padding-bottom: 2rem;  /* Espaciado inferior */
+}
+
+.ButtonFormTourist{
+    width: 100%;
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.ButtonFormReservation{
+    width: 100%;
+    color: blue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.ButtonFormReservation:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Icono de Show More de Carousel*/
+
+
+.ContainerButtonMoreReservation{
+    transform: translate3d(-60px, -60px, 0);
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.ButtonMoreReservation{
+    background-color: transparent;
+    border: none;
+}
+
+.ButtonMoreReservation a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+.IconArrow {
+    animation: move-right 1s linear infinite;
+    margin-top: -20px
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+/* Fin de Icono de Show More de Carousel*/
