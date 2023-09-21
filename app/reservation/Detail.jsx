@@ -1,7 +1,6 @@
 'use client'
 import { useEffect } from 'react';
-import styles from '../../styles/home/Home.module.css'
-import Link from 'next/link'
+import styles from '../../styles/Home.module.css'
 
 export function Detail(){
 

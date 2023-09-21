@@ -1,13 +1,13 @@
-.embla {
+.EmblaCarouselSpa {
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-height: 19rem;
-    margin-top: 60px;
+    margin-top: 52px;
   }
-  .embla__viewport {
+  .EmblaViewportSpa {
     overflow: hidden;
   }
-  .embla__container {
+  .EmblaContainerCarousel {
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-x;
@@ -15,55 +15,19 @@
       height: 40rem;
     margin-top: calc(var(--slide-spacing) * -1);
   }
-  .embla__slide {
+  .EmblaSlideCarousel {
     overflow: hidden;
     flex: 0 0 var(--slide-size);
     min-height: 0;
     padding-top: var(--slide-spacing);
     position: relative;
   }
-  .embla__slide__img {
+  .EmblaSlideImgSpa {
     display: block;
     height: 40rem;
     width: 100%;
     object-fit: cover;
   }
-  .embla__slide__number {
-    width: 4.6rem;
-    height: 4.6rem;
-    z-index: 1;
-    position: absolute;
-    top: calc(var(--slide-spacing) + 0.6rem);
-    right: 0.6rem;
-    border-radius: 50%;
-    background-color: rgba(var(--background-site-rgb-value), 0.85);
-    line-height: 4.6rem;
-    font-weight: 900;
-    text-align: center;
-    pointer-events: none;
-  }
-  .embla__slide__number > span {
-    color: var(--brand-primary);
-    background-image: linear-gradient(
-      45deg,
-      var(--brand-primary),
-      var(--brand-secondary)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.6rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-
-
-
   
 .ContainerButtonMoreSpa{
   transform: translate3d(-60px, -60px, 0);
@@ -142,13 +106,13 @@
   text-align: justify;
 }
 
-.embla {
+.EmblaSpa {
   overflow: hidden;
 }
-.embla__container {
+.EmblaSpaContainer {
   display: flex;
 }
-.embla__slide {
+.EmblaSpaSlide {
   flex: 0 0 100%;
   min-width: 0;
 }

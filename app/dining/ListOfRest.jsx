@@ -1,8 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import styles from '../../styles/gastronomy/Gastronomy.module.css'
-import Link from 'next/link'
+import styles from '../../styles/Gastronomy.module.css'
 import {getDataMealtype} from '../../store/mealtypeSlice/mealtypeSlice'
 
 export function ListOfRest(){

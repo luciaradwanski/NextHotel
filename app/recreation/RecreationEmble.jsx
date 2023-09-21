@@ -25,16 +25,16 @@ export function RecreationEmble(props) {
     }, [emblaApi, onScroll])
 
     return (
-        <div className={styles.embla}>
-            <div className={styles.embla__viewport} ref={emblaRef}>
-                <div className={styles.embla__container}>
+        <div className={styles.EmblaCarouselRecreation}>
+            <div className={styles.EmblaViewportCarouselRecreation} ref={emblaRef}>
+                <div className={styles.EmblaContainerRecreation}>
                 {slides.map((index) => (
-                    <div className={styles.embla__slide} key={index}>
-                    <div className={styles.embla__slide__number}>
+                    <div className={styles.EmblaSlideCarouselRecreation} key={index}>
+                    <div >
                         <span>{index + 1}</span>
                     </div>
                     <Image
-                        className={styles.embla__slide__img}
+                        className={styles.EmblaSlideCarouselImgRecreation}
                         src={imageByIndex(index)}
                         alt="Your alt text"
                     />
@@ -42,9 +42,9 @@ export function RecreationEmble(props) {
                 ))}
                 </div>
             </div>
-            <div className={styles.embla__progress}>
+            <div className={styles.EmblaProgressRecreation}>
                 <div
-                className={styles.embla__progress__bar}
+                className={styles.EmblaProgressRecreationBar}
                 style={{ transform: `translate3d(${scrollProgress}%,0px,0px)` }}
                 />
             </div>

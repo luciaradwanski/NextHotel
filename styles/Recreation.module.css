@@ -1,16 +1,15 @@
 /* RecreationEmble*/
 
-.embla {
+.EmblaCarouselRecreation {
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-height: 19rem;
-    margin-top: 60px;
-    padding: 1.4rem;
+    margin-top: 40px;
 }
-.embla__viewport {
+.EmblaViewportCarouselRecreation{
     overflow: hidden;
 }
-.embla__container {
+.EmblaContainerRecreation{
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
@@ -18,51 +17,20 @@
     height: auto;
     margin-left: calc(var(--slide-spacing) * -1);
 }
-.embla__slide {
+.EmblaSlideCarouselRecreation {
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);
     position: relative;
 }
-.embla__slide__img {
+.EmblaSlideCarouselImgRecreation {
     display: block;
     height: 39.1rem;
     width: 100%;
     object-fit: cover;
 }
-.embla__slide__number {
-    width: 4.6rem;
-    height: 4.6rem;
-    z-index: 1;
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    border-radius: 50%;
-    background-color: rgba(var(--background-site-rgb-value), 0.85);
-    line-height: 4.6rem;
-    font-weight: 900;
-    text-align: center;
-    pointer-events: none;
-}
-.embla__slide__number > span {
-    color: var(--brand-primary);
-    background-image: linear-gradient(
-        45deg,
-        var(--brand-primary),
-        var(--brand-secondary)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.6rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.embla__progress {
+
+.EmblaProgressRecreation {
     z-index: 1;
     background-color: rgb(249, 249, 249);
     position: absolute;
@@ -78,7 +46,7 @@
     max-width: 90%;
     overflow: hidden;
 }
-.embla__progress__bar {
+.EmblaProgressRecreationBar {
     background-image: linear-gradient(
         45deg,
         rgb(47, 112, 193),
@@ -97,7 +65,7 @@
 
 
 .ContainerButtonMoreRecreation{
-    transform: translate3d(-60px, -60px, 0);
+    transform: translate3d(-80px, -80px, 0);
     display: flex;
     justify-content: flex-end;
     
@@ -131,7 +99,8 @@
 /* Fin de Icono de Show More de Carousel*/
 
 
-/* Carousel*/
+/* Emble Carousel*/
+
 .ContainerCarousel{
     width: 80%;
     max-width: 1280px;
@@ -144,34 +113,34 @@
     align-items: center;
     align-content: center;
     gap: 4rem
-  }
-  
-  .ContainerCarousel h1{
+}
+
+.ContainerCarousel h1{
     font-size: 1.9rem;
-  }
-  
-  .ContainerCarousel p{
+}
+
+.ContainerCarousel p{
     width: 28rem;
     margin: 0 auto;
     padding: 1rem 0;
     font-size: 14px;
-  }
-  
-  .parrafoCarousel{
+}
+
+.parrafoCarousel{
     text-align: justify;
-  }
-  
-  .embla2 {
+}
+
+.emblaRecreation {
     overflow: hidden;
-  }
-  .embla__container2 {
+}
+
+.EmblaContainerRecreation {
     display: flex;
-  }
-  .embla__slide2 {
+}
+.EmbleSlideRecreation {
     flex: 0 0 100%;
     min-width: 0;
-  }
-  
+}
 /**/
 
 

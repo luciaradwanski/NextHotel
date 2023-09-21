@@ -53,19 +53,21 @@ export function ReservaCarousel(props) {
     }, [emblaApi, onInit, onSelect])
 
     return (
+        <div>
             <div>
-                <div className={styles.embla}>
-                    <div className={styles.embla__viewport} ref={emblaRef}>
-                    <div className={styles.embla__container}>
+                <div className={styles.EmblaCarouselReserva}>
+                    <div className={styles.EmblaViewportReserva} ref={emblaRef}>
+                    <div className={styles.EmblaContainerCarouselReserva}>
                         {slides.map((index) => (
-                        <div className={styles.embla__slide} key={index}>
-                            <div className={styles.embla__slide__number}>
+                        <div className={styles.EmblaSlideCarouselReserva} key={index}>
+                            <div>
                             <span>{index + 1}</span>
                             </div>
                             <Image
-                                className={styles.embla__slide__img}
+                                className={styles.EmblaSlideImgReserva}
                                 src={imageByIndex(index)}
                                 alt="Your alt text"
+                                priority={false}
                             />
                         </div>
                         ))}
@@ -76,7 +78,7 @@ export function ReservaCarousel(props) {
                     <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
                 </div>
 
-                <div className={styles.embla__dots}>
+                <div className={styles.EmblaDotsReserva}>
                     {scrollSnaps.map((_, index) => (
                         <DotButton
                             key={index}
@@ -85,14 +87,15 @@ export function ReservaCarousel(props) {
                         />
                     ))}
                 </div>
-                {/* <div className={styles.ContainerButtonMoreReservation}>
-                    <div className={styles.IconArrow}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi bi-arrow-down" viewBox="0 0 16 16">
-                            <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                        </svg>
-                    </div>
-                    <button className={styles.ButtonMoreReservation}><a href="#more">Show More</a></button>
-                </div> */}
             </div>
+            <div className={styles.ContainerButton}>
+                <div className={styles.IconArrow}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                    </svg>
+                </div>
+                <button className={styles.ButtonMore}><a href="#more">Show More</a></button>
+            </div>
+        </div>
     )
 }

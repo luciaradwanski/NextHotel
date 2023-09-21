@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import styles from '../../styles/rooms/ListOfRooms.module.css'
+import styles from '../../styles/ListOfRooms.module.css'
 import { getDataRooms } from '../../store/roomSlice/roomSlice'
 import Link from "next/link"
 

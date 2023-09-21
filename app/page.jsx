@@ -1,5 +1,5 @@
 
-import styles from '../styles/home/Home.module.css'
+import styles from '../styles/Home.module.css'
 import {Footer} from './Footer'
 
 import Portada from './Portada'

@@ -1,7 +1,6 @@
 'use client'
 import { useEffect } from 'react';
-import styles from '../../styles/home/Home.module.css'
-import Link from 'next/link'
+import styles from '../../styles/Home.module.css'
 
 export default function GastroDescription(){
 
@@ -10,7 +9,7 @@ export default function GastroDescription(){
     }, []);
     
     return (
-        <div className={styles.ContainerHome}>
+        <div className={styles.ContainerCarousel}>
             <div id='more' className={styles.ContainerDescription}>
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <h6><b>Welcome to Gastronomy of </b></h6>

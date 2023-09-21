@@ -21,15 +21,13 @@ export default function RoomLayout({children,}: {children: React.ReactNode}) {
             crossOrigin="anonymous"
             />
             <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
-            <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-            <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+            
             <title>✨</title>
         </head>
         <body>
             <Providers>
                 <Navigation/>
-                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-                <script  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                
                 <script
                     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
                     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
@@ -38,7 +36,7 @@ export default function RoomLayout({children,}: {children: React.ReactNode}) {
                 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
                 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-                <script type="text/javascript" src="slick/slick.min.js"></script>
+                
                 {children}
             </Providers>
         </body>

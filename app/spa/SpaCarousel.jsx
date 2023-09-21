@@ -1,8 +1,7 @@
 'use client'
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import styles from '../../styles/spa/Spa.module.css'
-import Autoplay from 'embla-carousel-autoplay'
+import styles from '../../styles/Spa.module.css'
 import imageIndex from './ImageIndex'
 
 
@@ -15,23 +14,16 @@ export function SpaCarousel(props){
     
 
     return (
-        <div>
-
-            <div className={styles.embla}>
-                <div className={styles.embla__viewport} ref={emblaRef}>
-                    <div className={styles.embla__container}>
-                    {slides.map((index) => (
-                        <div className={styles.embla__slide} key={index}>
-                        <div className={styles.embla__slide__number}>
-                            <span>{index + 1}</span>
-                        </div>
-                        <img
-                            className={styles.embla__slide__img}
-                            src={imageIndex(index)}
-                            alt="Your alt text"
-                        />
-                        </div>
-                    ))}
+        <div className={styles.EmblaCarouselSpa}>
+            <div>
+                <div className={styles.EmblaViewportSpa} ref={emblaRef}>
+                    <div className={styles.EmblaContainerCarousel}>
+                        {slides.map((index) => (
+                            <div className={styles.EmblaSlideCarousel} key={index}>
+                                <span>{index + 1}</span>
+                                <img className={styles.EmblaSlideImgSpa} src={imageIndex(index)} alt="Your alt text"/>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

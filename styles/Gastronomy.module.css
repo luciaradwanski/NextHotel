@@ -1,5 +1,5 @@
 .ContainerRest{
-  background-image: url("../../public/fondo.jpg");
+  background-image: url("../public/fondo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,16 +62,16 @@
     font-size: 20px;
 }
 
-.embla {
+.EmblaGastronomy {
     --slide-spacing: 1rem;
     --slide-size: 70%;
     --slide-height: 19rem;
     margin-top: 30px;
   }
-  .embla__viewport {
+  .EmblaViewportGatronomy {
     overflow: hidden;
   }
-  .embla__container {
+  .EmblaContainerGastronomy {
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
@@ -79,61 +79,41 @@
     height: auto;
     margin-left: calc(var(--slide-spacing) * -1);
   }
-  .embla__slide {
+  .EmblaSlideGastronomy {
     overflow: hidden;
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);
     position: relative;
   }
-  .embla__slide__img {
+  .EmblaSlideImgGastronomy {
     display: block;
     height: 40rem;
     width: 100%;
     object-fit: cover;
   }
-  .embla__slide__number {
-    width: 4.6rem;
-    height: 4.6rem;
-    z-index: 1;
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    border-radius: 50%;
-    line-height: 4.6rem;
-    font-weight: 900;
-    text-align: center;
-    pointer-events: none;
-  }
-  .embla__slide__number > span {
-    /* color: rgb(47, 112, 193);
-    background-image: linear-gradient(
-      45deg,
-      rgb(47, 112, 193),
-      rgb(116, 97, 195)
-    ); */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.6rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   
 
   /* Carousel SHOW MORE */
 
-  .ContainerButtonMoreGastro{
-    transform: translate3d(-260px, -60px, 0);
+  .ContainerButton{
+    transform: translate3d(-60px, -60px, 0);
     display: flex;
-    justify-content: flex-end;
-    
+    flex-direction: row;
+    justify-content: center;
   }
-
+  
+  .ButtonMore{
+    background-color: transparent;
+    border: none;
+  }
+  
+  .ButtonMore a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+  
   .IconArrow {
     animation: move-right 1s linear infinite;
     margin-top: -20px
@@ -146,16 +126,4 @@
     100% {
       transform: translateY(30px);
     }
-  }
-
-  .ButtonMoreGastro{
-    background-color: black;
-    border: none;
-    padding: 10px;
-  }
-  
-  .ButtonMoreGastro a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
   }

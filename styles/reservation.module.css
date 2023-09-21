@@ -1,16 +1,16 @@
 /* ReservaCarousel */
 
-.embla {
+.EmblaCarouselReserva {
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-height: 19rem;
-    margin-top: 60px;
+    margin-top: 50px;
     
 }
-.embla__viewport {
+.EmblaViewportReserva {
     overflow: hidden;
 }
-.embla__container {
+.EmblaContainerCarouselReserva {
     backface-visibility: hidden;
     display: flex;
     touch-action: pan-y;
@@ -18,50 +18,19 @@
     height: auto;
     margin-left: calc(var(--slide-spacing) * -1);
 }
-.embla__slide {
+.EmblaSlideCarouselReserva {
     flex: 0 0 var(--slide-size);
     min-width: 0;
     padding-left: var(--slide-spacing);
     position: relative;
 }
-.embla__slide__img {
+.EmblaSlideImgReserva {
     display: block;
     height: 39rem;
     width: 100%;
     object-fit: cover;
 }
-.embla__slide__number {
-    width: 4.6rem;
-    height: 4.6rem;
-    z-index: 1;
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    border-radius: 50%;
-    background-color: rgba(var(--background-site-rgb-value), 0.85);
-    line-height: 4.6rem;
-    font-weight: 900;
-    text-align: center;
-    pointer-events: none;
-}
-.embla__slide__number > span {
-    color: var(--brand-primary);
-    background-image: linear-gradient(
-        45deg,
-        var(--brand-primary),
-        var(--brand-secondary)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.6rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+
 .embla__dot,
 .embla__button {
     --webkit-appearance: none;
@@ -74,7 +43,7 @@
     padding: 0;
     margin: 0;
 }
-.embla__dots {
+.EmblaDotsReserva {
     z-index: 1;
     bottom: 1.2rem;
     position: absolute;
@@ -325,7 +294,7 @@
 /* Icono de Show More de Carousel*/
 
 
-.ContainerButtonMoreReservation{
+/* .ContainerButtonMoreReservation{
     transform: translate3d(-60px, -60px, 0);
     display: flex;
     justify-content: flex-end;
@@ -356,5 +325,128 @@
     100% {
         transform: translateY(30px);
     }
-}
+} */
 /* Fin de Icono de Show More de Carousel*/
+
+
+/* Embla Carousel*/
+
+.ContainerCarousel{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 4rem
+}
+.ContainerCarousel h1{
+    font-size: 1.9rem;
+}
+.ContainerCarousel p{
+    width: 28rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 14px;
+}
+
+.parrafoCarousel{
+    text-align: justify;
+}
+
+.EmblaReserva{
+    overflow: hidden;
+}
+.EmblaContainerReserva{
+    display: flex;
+}
+.EmblaSlideReserva {
+    flex: 0 0 100%;
+    min-width: 0;
+}
+
+/* fin emblaCarousel*/
+
+
+/* Emble carusel más texto al costado */
+
+.ContainerCarousel{
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 4rem
+}
+
+.ContainerCarousel h1{
+  font-size: 1.9rem;
+}
+
+.ContainerCarousel p{
+  width: 28rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 14px;
+}
+
+.parrafoCarousel{
+  text-align: justify;
+}
+
+.EmblaSpa {
+  overflow: hidden;
+}
+.EmblaSpaContainer {
+  display: flex;
+}
+.EmblaSpaSlide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Fin de emble carousel más texto al costado*/
+
+
+/* Carousel SHOW MORE */
+
+.ContainerButton{
+    transform: translate3d(-80px, -80px, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.ButtonMore{
+    background-color: transparent;
+    border: none;
+}
+
+.ButtonMore a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.IconArrow {
+    animation: move-right 1s linear infinite;
+    margin-top: -20px
+  }
+  
+  @keyframes move-right {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(30px);
+    }
+  }

@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image';
 import { flushSync } from 'react-dom'
-import styles from '../../styles/rooms/ListOfRooms.module.css'
+import styles from '../../styles/ListOfRooms.module.css'
 import Autoplay from 'embla-carousel-autoplay'
 import RoomIndex from './RoomIndex'
 
@@ -56,24 +56,24 @@ const RoomCarousel = (props) => {
     }, [emblaApi, onScroll])
 
     return (
-        <div className={styles.embla}>
-            <div className={styles.embla__viewport} ref={emblaRef}>
-                <div className={styles.embla__container}>
+        <div className={styles.EmblaCarouselRoom}>
+            <div className={styles.EmblaViewportRoom} ref={emblaRef}>
+                <div className={styles.EmblaContainerRoom}>
                 {slides.map((index) => (
-                    <div className={styles.embla__slide} key={index}>
+                    <div className={styles.EmblaSlideCarouselRoom} key={index}>
                     <div
-                        className={styles.embla__scale}
+                        className={styles.EmblaSlideCarouselRoom}
                         style={{
                         ...(tweenValues.length && {
                             transform: `scale(${tweenValues[index]})`,
                         }),
                         }}
                     >
-                        <div className={styles.embla__slide__number}>
+                        <div>
                         <span>{index + 1}</span>
                         </div>
                         <Image
-                        className={styles.embla__slide__img}
+                        className={styles.EmblaSlideImgRoom}
                         src={RoomIndex(index)}
                         alt="A cool cat."
                         />
@@ -82,13 +82,13 @@ const RoomCarousel = (props) => {
                 ))}
                 </div>
             </div>
-            <div className={styles.ContainerButtonMoreRoom}>
+            <div className={styles.ContainerButton}>
                 <div className={styles.IconArrow}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" className="bi bi-arrow-down" viewBox="0 0 16 16">
                         <path fillRule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
                     </svg>
                 </div>
-                <button className={styles.ButtonMoreRoom}><a href="#more">Show More</a></button>
+                <button className={styles.ButtonMoreR}><a href="#more">Show More</a></button>
             </div>
         </div>
     )
